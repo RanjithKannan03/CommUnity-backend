@@ -48,7 +48,7 @@ app.use(passport.session());
 
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/CommUnityDB");
+mongoose.connect("mongodb+srv://admin:admin@cluster0.8qukcf2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 
 app.get('/', (req, res) => {
     return res.status(200).json({
